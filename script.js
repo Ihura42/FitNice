@@ -44,112 +44,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-let openShopping = document.querySelector('.own-shopping');
-let closeShopping = document.querySelector('.closeShopping');
-let list = document.querySelector('.own-list');
-let listCard = document.querySelector('.own-listCard');
-let body = document.querySelector('body');
-let total = document.querySelector('.own-total');
-let quantity = document.querySelector('.own-quantity');
-
-openShopping.addEventListener('click', ()=>{
-    body.classList.add('active');
-})
-closeShopping.addEventListener('click', ()=>{
-    body.classList.remove('active');
-})
-
-let products = [
-    {
-        id: 1,
-        name: 'PRODUCT NAME 1',
-        image: '1.PNG',
-        price: 120000
-    },
-    {
-        id: 2,
-        name: 'PRODUCT NAME 2',
-        image: '2.PNG',
-        price: 120000
-    },
-    {
-        id: 3,
-        name: 'PRODUCT NAME 3',
-        image: '3.PNG',
-        price: 220000
-    },
-    {
-        id: 4,
-        name: 'PRODUCT NAME 4',
-        image: '4.PNG',
-        price: 123000
-    },
-    {
-        id: 5,
-        name: 'PRODUCT NAME 5',
-        image: '5.PNG',
-        price: 320000
-    },
-    {
-        id: 6,
-        name: 'PRODUCT NAME 6',
-        image: '6.PNG',
-        price: 120000
+function showModal(cardIndex) {
+    var modal = document.getElementById('myModal'+ cardIndex);
+    var modalText = document.getElementById('modal-text');
+    var content = "";
+  
+    modal.style.display = 'block';
+    modalText.innerText = content;
+  }
+  
+  function closeModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = 'none';
     }
-];
-let listCards  = [];
-function initApp(){
-    products.forEach((value, key) =>{
-        let newDiv = document.createElement('div');
-        newDiv.classList.add('item');
-        newDiv.innerHTML = `
-            <img src="image/${value.image}">
-            <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString()}</div>
-            <button onclick="addToCard(${key})">Add To Card</button>`;
-        list.appendChild(newDiv);
-    })
-}
-initApp();
-function addToCard(key){
-    if(listCards[key] == null){
-        // copy product form list to list card
-        listCards[key] = JSON.parse(JSON.stringify(products[key]));
-        listCards[key].quantity = 1;
-    }
-    reloadCard();
-}
-function reloadCard(){
-    listCard.innerHTML = '';
-    let count = 0;
-    let totalPrice = 0;
-    listCards.forEach((value, key)=>{
-        totalPrice = totalPrice + value.price;
-        count = count + value.quantity;
-        if(value != null){
-            let newDiv = document.createElement('li');
-            newDiv.innerHTML = `
-                <div><img src="image/${value.image}"/></div>
-                <div>${value.name}</div>
-                <div>${value.price.toLocaleString()}</div>
-                <div>
-                    <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
-                    <div class="count">${value.quantity}</div>
-                    <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
-                </div>`;
-                listCard.appendChild(newDiv);
+    
+    
+    var closeBtns = document.querySelectorAll('.close');
+    closeBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var modalId = this.closest('.modal').id;
+        closeModal(modalId);
+      });
+    });
+    
+    
+    window.addEventListener('click', function(event) {
+      var modals = document.querySelectorAll('.modal');
+      modals.forEach(function(modal) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
         }
-    })
-    total.innerText = totalPrice.toLocaleString();
-    quantity.innerText = count;
-}
-function changeQuantity(key, quantity){
-    if(quantity == 0){
-        delete listCards[key];
-    }else{
-        listCards[key].quantity = quantity;
-        listCards[key].price = quantity * products[key].price;
-    }
-    reloadCard();
-}
+      });
+    });
+  
+    document.querySelectorAll('.add-exercise-btn').forEach(button => {
+      button.addEventListener('click', () => {
+          
+        
+          const cardDetails = button.closest('.card-ex').querySelector('.exercise-details').innerHTML;
+          localStorage.setItem('addedExercise', cardDetails);
+  
+      });
+  });
     

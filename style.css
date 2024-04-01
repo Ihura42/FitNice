@@ -11,6 +11,66 @@ body{
     background-color: #24252A;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+.modal-content {
+    background-color: #fefefe; 
+    margin: 2% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none; 
+    cursor: pointer; 
+}
+  
+.manual {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+  
+  
+.header-manual {
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+  
+  
+.main-manual {
+    margin-top: 20px;
+}
+
+.section-manual {
+    margin-bottom: 20px;
+}
+
+
+
 header{
     
     display:flex;
@@ -128,6 +188,7 @@ header{
     border-radius: .9rem;
     justify-content: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .home-slider-control-btns button {
@@ -195,6 +256,18 @@ header{
 
 }
 
+footer{
+    margin-top: 5rem;
+    background-color: #1a1a1d;
+    width:100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom:0;
+} 
+
 .footer-bottom p{
     color: white;
 }
@@ -250,18 +323,6 @@ header{
    
 }
 
-footer{
-    margin-top: 5rem;
-    background-color: #1a1a1d;
-    width:100%;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    bottom:0;
-}
-
-
 .home-slider {
     display: flex;
     transition: transform 0.5s ease;
@@ -270,9 +331,6 @@ footer{
     overflow:hidden;
     transition: transform 1s ease;
 }
-
-
-
 
 .home-slider img {
     max-width: 25rem;
