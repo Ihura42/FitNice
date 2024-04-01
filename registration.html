@@ -6,34 +6,35 @@
     <title>Fitnice</title>
     <link rel="stylesheet" href="registration.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
     <header>
         <img class="home-logo" src="pics/logo.svg" alt="logo">
         <nav>
-            <ul class="home-sidebar">
+            <ul class = "home-sidebar">
                 <li onclick="hideSidebar()" class="home-cross">
                     <span class="material-symbols-outlined">
                         close
-                    </span>
-                </li>
+                    </span></li>
                 
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Plans</a></li>
-                <li><a href="#">Your plan</a></li>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="own.html">Plans</a>   
+                </li>
+
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
                 
             </ul>
-            <ul class="home-nav-links">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
+            <ul class = "home-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="own.html">Plans</a></li>
             </ul>
         </nav>
         <div class="login-reg">
-            <a href="#" class="home-loging">Sign in</a>
-            <a href="#" class="home-reg">Registration</a>
+            <a href = "login.html" class = "home-loging">Sign in</a>
+            <a href = "registration.html" class = "home-reg">Registration</a>
         </div>
         <li class="home-menu" onclick="showSidebar()">
             <span class="material-symbols-outlined">

@@ -6,34 +6,35 @@
     <title>Fitnice</title>
     <link rel="stylesheet" href="own.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
     <header>
         <img class="home-logo" src="pics/logo.svg" alt="logo">
         <nav>
-            <ul class="home-sidebar">
+            <ul class = "home-sidebar">
                 <li onclick="hideSidebar()" class="home-cross">
                     <span class="material-symbols-outlined">
                         close
-                    </span>
-                </li>
+                    </span></li>
                 
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Plans</a></li>
-                <li><a href="#">Your plan</a></li>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="own.html">Plans</a>   
+                </li>
+
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
                 
             </ul>
-            <ul class="home-nav-links">
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
+            <ul class = "home-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="own.html">Plans</a></li>
             </ul>
         </nav>
         <div class="login-reg">
-            <a href="#" class="home-loging">Sign in</a>
-            <a href="#" class="home-reg">Registration</a>
+            <a href = "login.html" class = "home-loging">Sign in</a>
+            <a href = "registration.html" class = "home-reg">Registration</a>
         </div>
         <li class="home-menu" onclick="showSidebar()">
             <span class="material-symbols-outlined">
@@ -41,7 +42,179 @@
             </span>
         </li>
     </header>
-    <div id="calendar"></div>
+
+   <div class="ex-sidebar">
+        <p onclick="hideExbar()" class="home-cross">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </p>
+        <div class="text">
+            <h1>Your plans</h1>
+        </div>
+        <div class="ex-cards-holder">
+            <div id="addedCardsContainer"></div>   
+        </div>    
+    </div> 
+    <div class="own-container">
+
+            <div class="own-container-text">
+                <h1>Choose exercises!</h1>
+                
+            </div>
+        
+        <div class="exercise-card-holder">
+            <div class="card-container-ex" data-card-id="1">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="2">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="3">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="4">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="5">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="6">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="7">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="8">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="9">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="10">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="11">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+            <div class="card-container-ex" data-card-id="12">
+                <div class="card-ex">
+                    <div class="exercise-details">
+                        <h1>Chest</h1>
+                        <h2> Bench Press</h2>
+                        <button class="add-exercise-btn" onclick="addToAddedList(this)">Add exercise</button>
+                    </div>
+                    <div class="image-container">
+                        <img src="pics/exercise-example.jpg" alt="Exercise image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-holder">
+            <button class = "button-access" onclick="showExbar()">Ready</button>
+        </div>
+    </div>
+
+    
     <footer>
         <div class="socialicons">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -53,14 +226,37 @@
             <p>&copy; 2024 FitNice</p>
         </div>
     </footer>
-    <script src="script.js"></script>
     <script>
-        $(document).ready(function() {
-           $("#calendar").evoCalendar({
-               
-               
-           });
-       });
-    </script>
+    let addedExerciseCardIds = [];
+
+
+function addToAddedList(button) {
+   const exerciseCard = button.closest('.card-container-ex');
+   const exerciseCardId = exerciseCard.dataset.cardId;
+
+   
+   if (!addedExerciseCardIds.includes(exerciseCardId)) {
+       const clonedCard = exerciseCard.cloneNode(true);
+       clonedCard.classList.add('added-card');
+       document.getElementById('addedCardsContainer').appendChild(clonedCard);
+       addedExerciseCardIds.push(exerciseCardId);
+
+       
+       button.innerText = "Added exercise";
+       button.classList.add("added");
+       button.disabled = true;
+   }
+}
+
+function hideExbar(){
+    const exbar = document.querySelector(".ex-sidebar")
+    exbar.style.display = 'none'
+}
+
+function showExbar(){
+    const exbar = document.querySelector(".ex-sidebar")
+    exbar.style.display = 'flex'
+}
+</script>
 </body>
 </html>

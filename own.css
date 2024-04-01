@@ -36,7 +36,11 @@ header{
     text-decoration: none;
 }
 
-.home-nav-links li a:hover{
+.home-nav-links a:hover{
+    color:#0088a9
+}
+
+.login-reg a:hover{
     color:#0088a9
 }
 
@@ -91,10 +95,31 @@ header{
 }
 
 .home-cross {
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    margin: 1rem 40%;
     cursor: pointer;
     color:white;
+}
+
+.ex-cards-holder{
+    margin: 1rem auto;
+}
+.addedCardsContainer{
+    gap: 5rem;
+}
+
+#addedCardsContainer{
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.text h1{
+    color: white;
+    font-weight: 700;
+}
+
+.text{
+    margin: 1rem auto;
 }
 .material-symbol-outlined{
     font-size: 7rem;
@@ -148,16 +173,137 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    
     bottom:0;
-}
+} 
+    
+  
+    .card-container-ex {
+      max-width: 300px;
+      
+    }
+    
+    .exercise-card-holder{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        margin:1rem auto;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        max-width: 70%;
+        margin-top: 3rem;
 
-#calendar {
-    max-width: 800%;
-    width: 80%;
-    max-height: 30rem;
-}
+    }
 
+    .ex-sidebar{
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        background-color: rgb(181, 181, 181);
+        width: 60vh;
+        right:0;
+        z-index: 998;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        display:none;
+    }
+
+    .home-cross {
+        position: relative;
+        top: 15px; 
+        left: 23px; 
+        cursor: pointer;
+    }
+    
+    .card-ex {
+      background-color: #ababab;
+      padding: 10px;
+      max-width:20rem;
+      margin: 5px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }  
+    
+    .own-container-text h1{
+        color:#fff;
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+    
+    .card-ex h1 {
+      width: 62px;
+      height: 20px;
+      background: #fff;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(63, 63, 63);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin:5%;
+    }
+    
+    .card-ex h2 {
+      font-size: 12px;
+      font-weight: 750;
+      color: black;
+      margin-left: 5px;
+    }
+  
+    .add-exercise-btn {
+      background-color: rgb(100, 100, 100);
+      color: #fff;
+      border: none;
+      
+      padding: 7px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      outline: none;
+      font-weight: 700;
+      margin:5%;
+    }
+
+    .button-holder{
+      background-color: rgb(100, 100, 100);
+      margin: auto;
+      margin-top: 30px;
+      color: #fff;
+      border: none;
+      padding: 7px 10px;
+      max-width: 5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      outline: none;
+      font-weight: 700;
+    }
+
+    .button-access{
+        background-color: rgb(100, 100, 100);
+      color: #fff;
+      border: none;
+      padding: 7px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      outline: none;
+      font-weight: 700;
+
+    }
+    
+    .image-container img {
+      max-width: 100px;
+      height: auto;
+      border-radius: 5px;
+      margin: 10px;
+    }
+  
 @media (max-width:480px){
     .home-sidebar{
         width:100%;
@@ -168,6 +314,18 @@ footer{
     }
     .login-reg{
         display:none;
+    }
+}
+
+@media (max-width:841px){
+    .exercise-card-holder{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:558px){
+    .exercise-card-holder{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
