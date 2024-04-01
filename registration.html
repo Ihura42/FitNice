@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitnice</title>
+    <link rel="stylesheet" href="registration.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <img class="home-logo" src="pics/logo.svg" alt="logo">
+        <nav>
+            <ul class="home-sidebar">
+                <li onclick="hideSidebar()" class="home-cross">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </li>
+                
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Plans</a></li>
+                <li><a href="#">Your plan</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+                
+            </ul>
+            <ul class="home-nav-links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="login-reg">
+            <a href="#" class="home-loging">Sign in</a>
+            <a href="#" class="home-reg">Registration</a>
+        </div>
+        <li class="home-menu" onclick="showSidebar()">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </li>
+    </header>
+    <div class="main">
+        <div class="wrapper">
+            <form action="">
+            <h1>Registration</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Email" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Dont have an account? <a href="#">Register</a></p>
+            </div>
+            </form>
+        </div>
+    </div>    
+    <footer>
+        <div class="socialicons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FitNice</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -40,19 +40,6 @@ header{
     color:#0088a9
 }
 
-.home-contact-btn{
-    padding:0.6rem 1.5rem;
-    background-color: rgba(0,136,169,1);
-    border:none;
-    border-radius: 3rem;
-    cursor:pointer;
-    transition: all 0.3s ease 0s;
-}
-
-.home-contact-btn:hover{
-    background-color:rgba(0,136,169,0.8);
-}
-
 header{
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -89,12 +76,6 @@ header{
     text-decoration: none;
 }
 
-.sub-menu{
-    background: rgba(68, 68, 68, 0.1);
-}
-
-
-
 .login-reg{
     display:flex;
     align-items: center;
@@ -109,67 +90,23 @@ header{
 
 }
 
-.home-card-topic-holder{
-    margin:auto;
-    margin-bottom: 0;
-    display: flex;
-    gap: 2%;
-    overflow-x: auto;
-    width:90%;
-    justify-content: space-between;
-}
-
-.home-card-topic{
-    background-color: white;
-    padding: 1rem;
-    width: 20rem; 
-    height: auto;
-    border-radius: .9rem;
+.home-cross {
     justify-content: center;
-    text-align: center;
-}
-
-.home-slider-control-btns button {
+    align-items: center;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
-    border: none;
+    color:white;
 }
-
-
-
-.home-slider{
-    max-width: 90%;
-    overflow-x: auto;
-    margin:auto;
-}
-
-.home-slider-control-btns {
+.material-symbol-outlined{
+    font-size: 7rem;
+}    
+.home-menu {
+    height: 100%;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-    color:#fff;
-    
-}
-
-.home-pre-btn, .home-next-btn{
+    color: rgb(255, 255, 255);
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
-    border: none;
-}
-
-.home-card-topic h1{
-   color: black;
-   text-align: center;
-   justify-content: center;
-   font-size: 1.5rem;
-   font-weight:600;
+    display:none;
 }
 
 .socialicons{
@@ -191,7 +128,6 @@ header{
     right: 1rem;
     background-color: #1a1a1d;
     right:1rem;
-
 }
 
 .footer-bottom p{
@@ -204,51 +140,6 @@ header{
     opacity: 0.9;
 }
 
-.home-slider-control-btns h1{
-    font-weight:600;
-    font-size: 2.5rem;
-}
-
-.home-title h1{
-    text-align: center;
-    justify-content: center;
-    font-weight:700;
-    color: white;
-    margin-top: 3rem;
-    font-size: 3rem;
-}
-
-.home-title h2{
-    text-align: center;
-    justify-content: center;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
-}
-.home-cross {
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    color:white;
-}
-.material-symbol-outlined{
-    font-size: 7rem;
-}    
-.home-menu {
-    height: 100%;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    display:none;
-}
-
-.home-card-topic img{
-    width: 10rem;
-   
-}
-
 footer{
     margin-top: 5rem;
     background-color: #1a1a1d;
@@ -257,31 +148,114 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
     bottom:0;
 }
 
-
-.home-slider {
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+  }
+  .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+  }
+  .wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 20px 0;
+  }
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+  }
+  .input-box input::placeholder{
+    color: #fff;
+  }
+  .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+  
+  }
+  .wrapper .remember-forgot{
     display: flex;
-    transition: transform 0.5s ease;
-    gap: 20px;
-    margin-top: 20px;
-    overflow:hidden;
-    transition: transform 1s ease;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+  }
+  .remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+  
+  }
+  .remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+  
+  }
+  .remember-forgot a:hover{
+    text-decoration: underline;
+  }
+  .wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  .wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  
+  }
+  .register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .register-link p a:hover{
+    text-decoration: underline;
+  }
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;   
 }
 
 
-
-
-.home-slider img {
-    max-width: 25rem;
-    height: auto;
-    transition: transform 1s ease;
-}
 @media (max-width:480px){
     .home-sidebar{
         width:100%;
-    }
+    }   
 
     .home-slider-img{
         width: 100%;
