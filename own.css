@@ -8,14 +8,14 @@
 }
 
 body{
-    background-color: #24252A;
+    background-color: #000;
 }
 
 header{
     display:flex;
     justify-content:space-between;
     align-items: center;
-    padding:0.9rem 10%;
+    padding:0.9rem 10%;    
 }
 
 .home-logo{
@@ -37,22 +37,22 @@ header{
 }
 
 .home-nav-links a:hover{
-    color:#0088a9
+    color:#5BD2B6;
 }
 
 .login-reg a:hover{
-    color:#0088a9
+    color:#5BD2B6;
 }
 
 header{
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 5px 5px 5px rgba(214, 214, 214, 0.1);
 }
 
 .home-sidebar{
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 100%;
     width: 250px;
     z-index: 999;
     background-color: rgba(34, 34, 34, 0.4);
@@ -95,22 +95,33 @@ header{
 }
 
 .home-cross {
-    position: relative;
-    margin: 1rem 40%;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    color:white;
+    color: white;
+}
+.ex-home-cross {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
 }
 
 .ex-cards-holder{
     margin: 1rem auto;
 }
-.addedCardsContainer{
-    gap: 5rem;
-}
 
 #addedCardsContainer{
     max-height: 70vh;
     overflow-y: auto;
+    
+}
+
+#addedCardsContainer button{
+    display: none;
+    
 }
 
 .text h1{
@@ -177,6 +188,9 @@ footer{
     bottom:0;
 } 
     
+.exercise-details{
+    align-self: flex-start;
+}
   
     .card-container-ex {
       max-width: 300px;
@@ -198,7 +212,7 @@ footer{
     .ex-sidebar{
         position: fixed;
         top: 0;
-        height: 100vh;
+        height: 100%;
         background-color: rgb(181, 181, 181);
         width: 60vh;
         right:0;
@@ -207,13 +221,6 @@ footer{
         align-items: flex-start;
         justify-content: flex-start;
         display:none;
-    }
-
-    .home-cross {
-        position: relative;
-        top: 15px; 
-        left: 23px; 
-        cursor: pointer;
     }
     
     .card-ex {

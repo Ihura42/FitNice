@@ -11,66 +11,71 @@
 </head>
 <body>
 
-    <header>
-        <img class = "home-logo "src="pics/logo.svg" alt="logo">
-        <nav>
-            <ul class = "home-sidebar">
-                <li onclick="hideSidebar()" class="home-cross">
-                    <span class="material-symbols-outlined">
-                        close
-                    </span></li>
-                
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="own.html">Plans</a>   
-                </li>
+  <header>
+    <img class="home-logo" src="pics/logo.svg" alt="logo">
+    <nav>
+        <ul class = "home-sidebar">
+            <li onclick="hideSidebar()" class="home-cross">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </li>
+            
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="own.html">Plans</a>   
+            </li>
+            <li><a href = "graph.html">Graph</a></li>
 
-                <li><a href="registration.html">Register</a></li>
-                <li><a href="login.html">Login</a></li>
-                
-            </ul>
-            <ul class = "home-nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="own.html">Plans</a></li>
-            </ul>
-        </nav>
-        <div class="login-reg">
-            <a href = "login.html" class = "home-loging">Sign in</a>
-            <a href = "registration.html" class = "home-reg">Registration</a>
-        </div>
-        <li class="home-menu" onclick="showSidebar()">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </li>
-    </header>
-    <div class="home-main">
-        <div class="home-title">
-            <h1>WORKOUT</h1>
-            <h2>Comprehensive plan for your journey</h2>
-        </div>
-        <div class="home-card-topic-holder">
-            <div class="home-card-topic" onclick="showModal(1)">
-                <img src = "pics/1.svg">
-                <h1>Build muscle</h1>
-            </div>
-            <div class="home-card-topic" onclick="showModal(2)">
-                <img src = "pics/2.svg">
-                <h1>Get stronger</h1>
-            </div>
-            <div class="home-card-topic" onclick="showModal(3)">
-                <img src = "pics/3.svg">
-                <h1>Lose weight</h1>
-            </div>
-            <div class="home-card-topic" onclick="showModal(4)">
-                <img src = "pics/4.svg">
-                <h1>Get fit</h1>
-            </div>
-            <div class="home-card-topic" onclick="showModal(5)">
-                <img src = "pics/5.svg">
-                <h1>Boost performance</h1>
-            </div>
-        </div>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+            
+        </ul>
+        <ul class = "home-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="own.html">Plans</a></li>
+            <li><a href = "graph.html">Graph</a></li>
+            <li><a href = "contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="login-reg">
+        <a href = "login.html" class = "home-loging">Sign in</a>
+        <a href = "registration.html" class = "home-reg">Registration</a>
+    </div>
+    <li class="home-menu" onclick="showSidebar()">
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+    </li>
+</header>
+  
+  <div class="home-main">
+      <div class="home-title">
+          <h1>WORKOUT</h1>
+          <h2>Comprehensive plan for your journey</h2>
+      </div>
+      <div class="home-card-topic-holder">
+          <div class="home-card-topic" onclick="showModal(1)">
+              <img src = "pics/1.svg">
+              <h1>Build muscle</h1>
+          </div>
+          <div class="home-card-topic" onclick="showModal(2)">
+              <img src = "pics/2.svg">
+              <h1>Get stronger</h1>
+          </div>
+          <div class="home-card-topic" onclick="showModal(3)">
+              <img src = "pics/3.svg">
+              <h1>Lose weight</h1>
+          </div>
+          <div class="home-card-topic" onclick="showModal(4)">
+              <img src = "pics/4.svg">
+              <h1>Get fit</h1>
+          </div>
+          <div class="home-card-topic" onclick="showModal(5)">
+              <img src = "pics/5.svg">
+              <h1>Boost performance</h1>
+          </div>
+      </div>
         <div class="home-slider-container">
             <div class="home-slider-control-btns">
                 <button class = "home-pre-btn">&#10094;</button>

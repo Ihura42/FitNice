@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #24252A;
+    background-color: #000000;
 }
 
 .modal {
@@ -72,7 +72,6 @@ body{
 
 
 header{
-    
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -98,7 +97,7 @@ header{
 }
 
 .home-nav-links li a:hover{
-    color:#0088a9
+    color:#5BD2B6;
 }
 
 .home-contact-btn{
@@ -110,12 +109,13 @@ header{
     transition: all 0.3s ease 0s;
 }
 
-.home-contact-btn:hover{
-    background-color:rgba(0,136,169,0.8);
+.login-reg a:hover{
+    color:#5BD2B6;
 }
 
+
 header{
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 5px rgba(214, 214, 214, 0.1);
 }
 
 .home-sidebar{
@@ -181,7 +181,7 @@ header{
 }
 
 .home-card-topic{
-    background-color: white;
+    background-color: rgb(46, 46, 46);
     padding: 1rem;
     width: 20rem; 
     height: auto;
@@ -220,14 +220,14 @@ header{
 
 .home-pre-btn, .home-next-btn{
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background: #5BD2B6;
+    color: #5BD2B6;
     padding: 10px;
     border: none;
 }
 
 .home-card-topic h1{
-   color: black;
+   color: rgb(255, 255, 255);
    text-align: center;
    justify-content: center;
    font-size: 1.5rem;
@@ -247,6 +247,7 @@ header{
 .socialicons i:hover{
     transform:scale(1.1);
     transition: transform 0.5s ease;
+    color: #5BD2B6;
 }
 
 .footer-bottom{
@@ -258,7 +259,7 @@ header{
 
 footer{
     margin-top: 5rem;
-    background-color: #1a1a1d;
+    background-color: #111111;
     width:100%;
     padding: 1rem;
     display: flex;
@@ -287,7 +288,7 @@ footer{
     text-align: center;
     justify-content: center;
     font-weight:700;
-    color: white;
+    color: #5BD2B6;
     margin-top: 3rem;
     font-size: 3rem;
 }
@@ -320,7 +321,7 @@ footer{
 
 .home-card-topic img{
     width: 10rem;
-   
+   color:white;
 }
 
 .home-slider {
@@ -336,7 +337,10 @@ footer{
     max-width: 25rem;
     height: auto;
     transition: transform 1s ease;
+    cursor:pointer;
+    
 }
+
 @media (max-width:480px){
     .home-sidebar{
         width:100%;
