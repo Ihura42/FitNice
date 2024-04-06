@@ -87,5 +87,61 @@ function showModal(cardIndex) {
       });
   });
 
+  let chartData = [0, 0, 0, 0, 0, 0, 0];
 
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'],
+          datasets: [{
+              data: chartData,
+              backgroundColor: 'rgba(40, 40, 40, 0.7)', 
+              borderColor: 'rgba(128, 128, 128, 1)', 
+              borderWidth: 1
+          }]
+      },
+      options: {
+          responsive: true,
+          maintainAspectRatio: false, 
+          scales: {
+              y: {
+                  beginAtZero: true,
+                  max: 10,
+                  ticks: {
+                      color: 'white' 
+                  }
+              },
+              x: {
+                  ticks: {
+                      color: 'white' 
+                  }
+              }
+          },
+          plugins: {
+              legend: {
+                  display: false 
+              }
+          }
+      }
+  });
+  
+
+  function addTraining() {
+      const dayIndex = document.getElementById('daySelect').value;
+      if (dayIndex >= 0 && dayIndex < chartData.length) {
+          if (chartData[dayIndex] < 10) {
+              chartData[dayIndex]++; 
+              myChart.update(); 
+          }
+      }
+  }
+
+  function removeTraining() {
+      const dayIndex = document.getElementById('daySelect').value; 
+      if (dayIndex >= 0 && dayIndex < chartData.length && chartData[dayIndex] > 0) {
+          chartData[dayIndex]--; 
+          myChart.update(); 
+      }
+  }
     

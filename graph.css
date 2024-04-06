@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    
+}
+
+body{
+    background-color: #000;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0.9rem 10%;
+}
+
+.home-logo{
+    cursor:pointer;
+    max-height:3rem;
+}
+
+.home-nav-links li{
+    display: inline-block;
+    padding: 0rem 1.2rem;
+}
+
+.home-nav-links li a {
+    list-style:none;
+    transition: all 0.3s ease 0s;
+    font-size: 1rem;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.home-nav-links li a:hover{
+    color:#5BD2B6;
+}
+
+.login-reg a:hover{
+    color:#5BD2B6;
+}
+
+
+header{
+    box-shadow: 5px 5px 5px rgba(214, 214, 214, 0.1);
+}
+
+.home-sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(34, 34, 34, 0.4);
+    backdrop-filter: blur(10px);
+    border: solid rgb(63, 63, 63) 2px;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.home-sidebar li{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:3rem;
+    font-size: 1rem;
+    width: 100%;
+}
+.home-sidebar a{
+    color:white;
+    text-decoration: none;
+}
+
+.login-reg{
+    display:flex;
+    align-items: center;
+}
+
+.login-reg a{
+    margin-right:25px;
+    margin-left:10px;
+    color: #fff;
+    font-weight:500;
+    text-decoration:none;
+
+}
+
+.home-cross {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color:white;
+}
+.material-symbol-outlined{
+    font-size: 7rem;
+}    
+.home-menu {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display:none;
+}
+
+.socialicons{
+    display: flex;
+    
+}
+
+.socialicons a{
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.socialicons i:hover{
+    transform:scale(1.1);
+    transition: transform 0.5s ease;
+    color: #5BD2B6;
+}
+
+.white-text {
+    color: #fff;
+    font-weight: 600;
+}
+
+.green-text {
+    color: #5BD2B6;
+    font-weight: 600;
+}
+
+.footer-bottom{
+    right: 1rem;
+    background-color: #1a1a1d;
+    right:1rem;
+}
+
+.footer-bottom p{
+    color: white;
+}
+
+.socialicons a i{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+}
+
+footer{
+    margin-top: 5rem;
+    background-color: #1a1a1d;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom:0;
+}
+
+#chart-container {
+    height: 25rem;
+    margin: 5rem 0;
+}
+
+#myChart { 
+    background-color: rgb(75, 75, 75); 
+}
+
+.main{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+.main button {
+    background-color: #4CAF50; 
+    border: none;
+    width: auto;
+    color: white; 
+    padding: 1rem 8%; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem; 
+    margin-top: 1.5rem; 
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem; 
+    cursor: pointer;
+    border-radius: 8px; 
+    transition-duration: 0.4s;
+}
+
+.main button:hover {
+    background-color: #45a049; 
+    color: white; 
+}
+
+.day-choice{
+    width: 25rem;
+}
+
+
+
+#daySelect {
+    background-color: #f5f5f5; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    font-size: 16px;
+    width: 100%; 
+    border-radius: 5px; 
+  }
+  
+  #daySelect:hover {
+    border-color: #999; 
+  }
+  
+  
+  #daySelect:focus {
+    outline: none; 
+    border-color: #66afe9;
+  }
+   
+  .graph-control-buttons{
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .graph-title h1{
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 650;
+    font-size: 2.5rem;
+  }
+
+
+@media (max-width:781px){
+    .home-menu{
+        display:block;
+    }
+    .home-nav-links{
+        display:none;
+    }
+    #chart-container{
+        height: 20rem;
+    }
+    .day-choice{
+        width:100%;
+    }
+    .main button {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px){
+    #chart-container{
+        height: 15rem;
+    }
+
+}
+

@@ -116,6 +116,9 @@ header{
 #addedCardsContainer{
     max-height: 70vh;
     overflow-y: auto;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
     
 }
 
@@ -158,8 +161,8 @@ header{
 .socialicons i:hover{
     transform:scale(1.1);
     transition: transform 0.5s ease;
+    color: #5BD2B6;
 }
-
 .footer-bottom{
     right: 1rem;
     background-color: #1a1a1d;
@@ -188,9 +191,6 @@ footer{
     bottom:0;
 } 
     
-.exercise-details{
-    align-self: flex-start;
-}
   
     .card-container-ex {
       max-width: 300px;
@@ -202,7 +202,7 @@ footer{
         grid-template-columns: repeat(3, 1fr);
         justify-content: space-between;
         margin:1rem auto;
-        row-gap: 1rem;
+        row-gap: 3rem;
         column-gap: 1rem;
         max-width: 70%;
         margin-top: 3rem;
@@ -213,8 +213,8 @@ footer{
         position: fixed;
         top: 0;
         height: 100%;
-        background-color: rgb(181, 181, 181);
-        width: 60vh;
+        background-color: rgb(32, 32, 32);
+        width: 30%;
         right:0;
         z-index: 998;
         flex-direction: column;
@@ -222,60 +222,55 @@ footer{
         justify-content: flex-start;
         display:none;
     }
+
+    
     
     .card-ex {
-      background-color: #ababab;
-      padding: 10px;
-      max-width:20rem;
-      margin: 5px;
+      background-color: #ffffff;
+      padding: 1.5rem;
       border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
     }  
     
-    .own-container-text h1{
-        color:#fff;
+    .own-container-text h1 {
         text-align: center;
         font-weight: 700;
         font-size: 3rem;
         margin-top: 3rem;
     }
     
+    .white-text {
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .green-text {
+        color: #5BD2B6;
+        font-weight: 600;
+    }
+
+    
     .card-ex h1 {
-      width: 62px;
-      height: 20px;
-      background: #fff;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: 600;
-      color: rgb(63, 63, 63);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin:5%;
+      font-size: 1.6rem;
+      font-weight: 550;
     }
     
     .card-ex h2 {
-      font-size: 12px;
-      font-weight: 750;
-      color: black;
-      margin-left: 5px;
+        font-size: 1.2rem;
+        color: grey;
     }
   
     .add-exercise-btn {
-      background-color: rgb(100, 100, 100);
-      color: #fff;
-      border: none;
-      
-      padding: 7px 10px;
-      border-radius: 4px;
+      background-color: rgb(255, 255, 255);
+      color: #7ed1be;
+      font-weight:400;
+      border-radius: 20px;
       cursor: pointer;
       outline: none;
       font-weight: 700;
-      margin:5%;
+      padding: 0.5rem 1rem;
+      border: 2px solid #5BD2B6;
+      display: flex;
+      margin-left: auto;
     }
 
     .button-holder{
@@ -305,10 +300,13 @@ footer{
     }
     
     .image-container img {
-      max-width: 100px;
+      max-width: 10rem;
       height: auto;
       border-radius: 5px;
-      margin: 10px;
+      margin: 0.7rem auto;
+      margin-top: 2rem;
+      display:flex;
+      align-self: center;
     }
   
 @media (max-width:480px){
@@ -333,6 +331,9 @@ footer{
 @media (max-width:558px){
     .exercise-card-holder{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .ex-sidebar{
+        width: 100%;
     }
 }
 

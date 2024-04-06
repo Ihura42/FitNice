@@ -127,8 +127,8 @@ header{
 .socialicons i:hover{
     transform:scale(1.1);
     transition: transform 0.5s ease;
+    color: #5BD2B6;
 }
-
 .footer-bottom{
     right: 1rem;
     background-color: #1a1a1d;
@@ -170,6 +170,8 @@ footer{
   .wrapper h1{
     font-size: 36px;
     text-align: center;
+    color: #5BD2B6;
+    
   }
   .wrapper .input-box{
     position: relative;

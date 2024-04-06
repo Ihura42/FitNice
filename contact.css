@@ -132,6 +132,7 @@ header{
 .socialicons i:hover{
     transform:scale(1.1);
     transition: transform 0.5s ease;
+    color: #5BD2B6;
 }
 
 .footer-bottom{
@@ -199,8 +200,14 @@ footer{
     
 }
 
+.green-text {
+    color: #5BD2B6;
+    
+}
+
 .ct-text-box h1{
     font-size: 3rem;
+    color: #5BD2B6;
 }
 
 .ct-text-box-links{
