@@ -56,8 +56,7 @@ header{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(34, 34, 34, 0.4);
-    backdrop-filter: blur(10px);
+    background-color: rgb(34, 34, 34);
     border: solid rgb(63, 63, 63) 2px;
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     display: none;
@@ -121,7 +120,7 @@ header{
 
 .socialicons a{
     text-decoration: none;
-    margin: 1rem;
+    margin: 0.7rem;
 }
 
 .socialicons i:hover{
@@ -138,6 +137,7 @@ header{
 
 .footer-bottom p{
     color: white;
+    font-size: 0.7rem;
 }
 
 .socialicons a i{
