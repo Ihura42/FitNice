@@ -183,7 +183,7 @@ footer{
 
 
 .main button {
-    background-color: #4CAF50; 
+    background-color: #5BD2B6; 
     border: none;
     width: auto;
     color: white; 
@@ -201,7 +201,7 @@ footer{
 }
 
 .main button:hover {
-    background-color: #45a049; 
+    background-color: #5BD2B6; 
     color: white; 
 }
 

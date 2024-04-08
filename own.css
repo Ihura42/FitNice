@@ -273,29 +273,22 @@ footer{
       margin-left: auto;
     }
 
-    .button-holder{
-      background-color: rgb(100, 100, 100);
-      margin: auto;
-      margin-top: 30px;
-      color: #fff;
-      border: none;
-      padding: 7px 10px;
-      max-width: 5rem;
-      border-radius: 4px;
-      cursor: pointer;
-      outline: none;
-      font-weight: 700;
+    .button-access{
+        display: block;
+        width: 200px; 
+        margin: 5rem auto; 
+        padding: 10px 20px; 
+        border-radius: 20px; 
+        background-color: #ffffff; 
+        text-align: center;
+        color: #000000; 
+        text-decoration: none;
+        cursor: pointer; 
+        transition: background-color 0.5s ease, color 0.5s ease;
     }
 
-    .button-access{
-        background-color: rgb(100, 100, 100);
-      color: #fff;
-      border: none;
-      padding: 7px 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      outline: none;
-      font-weight: 700;
+    .button-access:hover {
+        background-color: #545454;
 
     }
     
